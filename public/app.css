@@ -2,6 +2,7 @@
   display:flex;
   flex-flow: wrap;
 }
+
 .first-header{
   font-size: 36px;
   color:grey;
@@ -10,23 +11,29 @@
   border:0.5px grey solid;
   flex-flow: row wrap;
 }
+
 .red{
   color:red;
 }
+
 .second-headers{
   font-size:24px;
 }
+
 .robotpic{
   border: 0.5px solid grey;
   border-radius: 70px;
   float:left;
 }
+
 .RobotName{
   font-size:48px;
 }
+
 .secondbox{
 margin-top: -40px;
 }
+
 .belowimage{
   display:flex;
   flex-direction: column;
@@ -43,10 +50,12 @@ margin-top: -40px;
   margin-left: 20px;
   padding-right: 20px;
 }
+
 .fourthbox{
 display:flex;
 flex-flow: row;
 }
+
 .skls{
   display:flex:
   flex-direction:column;
@@ -54,10 +63,12 @@ flex-flow: row;
 .skills{
   font-size: 18px;
 }
+
 .los{
   display: flex;
   flex-direction: row;
 }
+
 .skillsList{
   list-style-type: none;
   font-size: 18px;

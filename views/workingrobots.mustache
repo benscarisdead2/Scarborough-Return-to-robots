@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Working Robots</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+
+<body>
+  <nav class="otherRobots">
+    <a href="/robot">Home</a>
+    <a href="/workingrobots">Working Robots</a>
+    <a href="/unemployedrobots">Unemployed Robots</a>
+  </nav>
+  <h1 class="working">Working Robots</h1>
+  <div class="container">
+    <!-- open up users -->
+    {{#working}}
+    <div class="robots">
+      <img class="pics" src="{{avatar}}">
+      <p class="name">{{name}}</p>
+      {{#job}}
+      <p class="job-company">{{job}}{{company}}</p>
+      {{/job}}
+    </div>
+    {{/working}}
+  </div>
+  <br> {{#working}}
+  <section class="firstRobot">
+    <div class="firstbox">
+      <img class="robotpic" src="{{avatar}}">
+      <p class="RobotName">{{name}}</p>
+    </div>
+
+    <div class="secondbox">
+      {{#job}}
+      <p class="info">{{city}}{{country}} {{job}}{{company}}</p>
+      {{/job}} {{^job}}
+      <p class="info">{{city}}{{country}}
+        <p class="red">Available for hire</p>
+        {{/job}}
+        <p class="emailphone">{{email}}{{phone}}</p>
+    </div>
+
+    <div class="belowimage">
+
+      <div class="thirdbox">
+        {{#university}}
+        <p class="education">Education</p>
+        <p class="university">{{university}}</p><br> {{/university}} {{^university}} {{/university}}
+      </div>
+      <br>
+      <div class="fourthbox">
+        <div class="skls">
+          <p class="skills">Skills</p>
+        </div>
+
+        <div class="los">
+          <ul class="skls">
+            {{#skills}}
+            <li class="skillsList">{{.}}</li>
+            {{/skills}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{/working}}
+
+  </div>
+</body>
+
+</html>
